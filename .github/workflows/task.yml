@@ -24,4 +24,12 @@ jobs:
      - name: List
        run: ls -alh
        
+     - name: Commit&push
+       run: |
+            git config --global user.name "mena_magdy"
+            git config --global user.email "m.ayad@t-petra.com"
+            git add sorted.txt
+            git commit -m "Get Result from workflow"
+            git push origin main
+       
     
