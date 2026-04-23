@@ -1,5 +1,6 @@
 name: SortedFile
-permissions: [write]
+permissions:
+  contents: write
 on: [push]
 
 jobs:
