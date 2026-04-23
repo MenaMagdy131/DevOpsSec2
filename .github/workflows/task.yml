@@ -3,7 +3,8 @@ name: SortedFile
 on: [push]
 
 jobs:
-  name: SortedFile
+  SortedFile:
+  
    runs-on: ubuntu-latest
    
    steps:
