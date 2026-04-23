@@ -1,0 +1,23 @@
+name: SortedFile
+
+on: [push]
+
+jobs:
+  name: SortedFile
+   runs-on: ubuntu-latest
+   
+   steps:
+   
+     - name: Checkout
+       uses: action/checkout@v4
+       
+     - name: List
+       run: ls -alh
+
+     - name: ChangeMode
+       run: chmod +x sortuniq.sh
+     
+     - name: RunScript
+       run: ./sortuniq.sh fruits.txt
+       
+    
