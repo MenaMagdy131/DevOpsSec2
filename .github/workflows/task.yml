@@ -21,4 +21,7 @@ jobs:
      - name: RunScript
        run: ./sortuniq.sh fruits.txt
        
+     - name: List
+       run: ls -alh
+       
     
